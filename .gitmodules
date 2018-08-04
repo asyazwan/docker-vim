@@ -1,0 +1,39 @@
+[submodule "plugged/delimitmate"]
+	path = plugged/delimitmate
+	url = https://github.com/raimondi/delimitmate.git
+[submodule "plugged/editorconfig-vim"]
+	path = plugged/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "plugged/fzf.vim"]
+	path = plugged/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "plugged/nerdtree"]
+	path = plugged/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "plugged/nerdtree-git-plugin"]
+	path = plugged/nerdtree-git-plugin
+	url = https://github.com/xuyuanp/nerdtree-git-plugin.git
+[submodule "plugged/phpcd.vim"]
+	path = plugged/phpcd.vim
+	url = https://github.com/lvht/phpcd.vim.git
+[submodule "plugged/syntastic"]
+	path = plugged/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "plugged/vim-airline"]
+	path = plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "plugged/vim-airline-themes"]
+	path = plugged/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "plugged/vim-colors-solarized"]
+	path = plugged/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "plugged/vim-devicons"]
+	path = plugged/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "plugged/vim-fugitive"]
+	path = plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "plugged/vim-indentguides"]
+	path = plugged/vim-indentguides
+	url = https://github.com/thaerkh/vim-indentguides.git
