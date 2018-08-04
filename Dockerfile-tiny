@@ -1,0 +1,37 @@
+FROM alpine:3.8 as builder
+
+WORKDIR /tmp
+
+RUN apk add --no-cache \
+  build-base \
+  ctags \
+  git \
+  ncurses-dev \
+  make
+
+RUN git clone https://github.com/vim/vim && cd vim \
+  && ./configure \
+  --disable-gui \
+  --enable-multibyte \
+  --with-features=tiny \
+  --with-compiledby=asyazwan@gmail.com \
+  && make install
+
+
+FROM alpine:3.8
+
+COPY --from=builder /usr/local/bin /usr/local/bin
+COPY --from=builder /usr/local/share/vim  /usr/local/share/vim
+
+RUN apk add --update --no-cache \
+  git \
+  bash \
+  fish \
+  ctags \
+  fzf \
+  the_silver_searcher
+
+RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+
+
+ENTRYPOINT ["vim"]
